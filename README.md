@@ -99,7 +99,7 @@ docker stop <container_id>
 ```
 
 
-
+To install requirements through setup.py file
 ```
 python setup.py install
 ```
