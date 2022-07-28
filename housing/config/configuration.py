@@ -64,7 +64,7 @@ class Configuration:
 
             report_file_path= os.path.join(data_validation_artifact_dir,data_validation_config[DATA_VALIDATION_REPORT_FILE_NAME_KEY] )
 
-            report_page_file_path= os.path.join(data_validation_artifact_dir, data_validation_config[DATA_VALIDATION_REPORT_PAGE_FILE_NAME_KEY]_)
+            report_page_file_path= os.path.join(data_validation_artifact_dir, data_validation_config[DATA_VALIDATION_REPORT_PAGE_FILE_NAME_KEY])
 
             data_validation_config= DataValidationConfig(schema_file_path= schema_file_path, 
             report_file_path= report_file_path, 
