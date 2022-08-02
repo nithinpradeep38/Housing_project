@@ -1,13 +1,14 @@
 
 from flask import Flask,request
 import sys
+import pip
 from housing.util.util import read_yaml_file,write_yaml_file
 from matplotlib.style import context
 from housing.logger import logging
 from housing.exception import HousingException
 import os,sys
 import json
-from housing.config.configuration import Configuartion
+from housing.config.configuration import Configuration
 from housing.constant import CONFIG_DIR, get_current_time_stamp
 from housing.pipeline.pipeline import Pipeline
 from housing.entity.housing_predictor import HousingPredictor,HousingData

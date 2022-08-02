@@ -29,6 +29,11 @@ class ModelPusher:
             os.makedirs(export_dir, exist_ok=True)
 
             shutil.copy(src=evaluated_model_file_path, dst=export_model_file_path)
+            # we can write a python function to create the saved_models folder in Azure blob/ google cloud or s3 bucket
+            #in utils, create function to load model from s3 bucket and save model to s3 bucket.
+            #boto3 is the package for the same.
+            #https://github.com/avnyadav/19thMLDL_fitbit/blob/main/webapp/cloud_storage_layer/aws/amazon_simple_storage_service.py check this
+            
             logging.info(
                 f"Trained model: {evaluated_model_file_path} is copied in export dir:[{export_model_file_path}]")
 
